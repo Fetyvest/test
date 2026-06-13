@@ -1,0 +1,58 @@
+.hero {
+    height: calc(100svh - 65px);
+    background: url(../../img/hero/background.jpg) center/cover no-repeat;
+    position: relative;
+    z-index: 1;
+    border: 0 black solid;
+    border-width: 0 0 10px 0;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #000000BB;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+.hero__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    color: white;
+}
+
+.hero__block {
+    width: 80%;
+    min-width: 300px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title {
+    text-align: center;
+    font-size: clamp(3.125rem, 1.2583rem + 9.3333vw, 5.75rem);
+    letter-spacing: 8px;
+    text-shadow: 0 0 12px #FFFFFFC0;
+}
+
+.hero__desc {
+    text-align: center;
+    font-size: clamp(0.75rem, 0.2167rem + 2.6667vw, 1.5rem);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px #FFFFFF80;
+}
