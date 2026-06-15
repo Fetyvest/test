@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест</title>
-
-    <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
-    <style>
-        body {
-            overflow: hidden;
-        }
-        .wrapper {
-            padding: 20px 30px;
-            width: 100vw;
-            height: 100svh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        /* .title {} */
-        /* .subtitle {} */
-        /* .text {} */
-    </style>
+    <title>MT Studio — разработка плагинов для Minecraft</title>
+    
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Made by Fetyvest -->
+    <!-- fetyvest.ru -->
+
     <div class="wrapper">
-        <h1 class="title">Это тестовая страница</h1>
-        <h2 class="subtitle">Но на ней пока ничего нет</h2>
-        <p class="text">В данный момент тесты не проводятся, поэтому эта страница пустая</p>
-        <a href="https://fetyvest.ru">На главную</a>
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-block"><img src="img/logo/logo.jpg" alt="Лого" class="logo-img"></div>
+                        <div class="logo-title">MT Studio</div>
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#">Скачать</a></li>
+                            <li class="header__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="header__burger" id="burgerBnt">
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="under-header"></div>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__block">
+                            <div></div>
+                            <h1 class="hero__title">MT Studio</h1>
+                            <div class="hero__text-block">
+                                <p class="hero__text">— разработка плагинов и модификаций для Minecraft, а также создание собственных игр.</p>
+                                <p class="hero__text">Основатель студии Фил сам играет в Minecraft, делает свой сервер и увлекается другими игровыми проектами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
